@@ -1,0 +1,669 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline:none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust:100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust:100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+body{
+    background: url('./img/fon.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    min-width: 100%;
+    min-height: 1rem;
+    height: 6rem;
+    box-shadow: 0px 1px 20px 7px rgb(102,51,153,0.5);
+    border-bottom: 1px solid rgb(102,51,153,0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: header 24s infinite alternate;
+    position: fixed;
+    top: 0;
+    z-index: 22;
+
+}
+
+@keyframes header {
+    50% {
+      background: rgba(74, 1, 105, 0.7);
+      box-shadow: 0px 1px 20px 7px rgba(230, 16, 194, 0.5);
+    }
+  }
+.ist{
+    text-align: right;
+    color: rgb(102,51,153,0.5);
+    
+}
+.listHeader{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+}
+.listHeader p{
+    margin-right: 20px;
+    color: rgba(160, 52, 118, 1);
+    text-align: center;
+}
+.listHeader p:hover{
+    color: blueviolet;
+    text-shadow: 1px 1px 2px blueviolet;
+}
+.listHeader .vod:hover::first-letter{
+    color: rgba(160, 52, 118, 1);
+    text-shadow: 2px 22px 20px rgba(160, 52, 118, 1);
+}
+.listHeader .Music:hover::first-letter{
+    color: rgb(247, 0, 255);
+    text-shadow: 2px 22px 20px rgb(247, 0, 255);
+}
+.listHeader .Film:hover::first-letter{
+    color: rgb(190, 165, 19);
+    text-shadow: 2px 22px 20px rgb(190, 165, 19);
+}
+.listHeader .Games:hover::first-letter{
+    color: rgb(19, 179, 190);
+    text-shadow: 2px 22px 20px rgb(19, 179, 190);
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.89);
+    margin-top: 6%;
+    width: 80%;
+    height: auto;
+    border: 1px solid rgba(255, 0, 179, 0.534);
+    box-shadow: 0 15px 7px 12px teal,
+              0 22px 7px 12px rgb(50, 117, 205),
+              0 28px 7px 12px rgb(255, 0, 234);
+    animation: background 24s infinite alternate;
+
+}
+@keyframes background {
+    50% {
+      background: rgba(29, 0, 41, 0.897);
+      box-shadow: 0 14px 7px 12px mediumorchid ,
+                  0 21px 7px 12px teal ,
+                  0 28px 7px 12px red ;
+    }
+  }
+
+  h1 {
+    color: hsla(0, 0%, 0%, .9);
+    margin-top: 70px;
+    font: normal 48px Varela Round, sans-serif;
+    height: 48px;
+    left: 0;
+    letter-spacing: 5px;
+    text-align: center;
+    animation: move linear 8s infinite;  
+  }
+#h1p1{
+  text-align: right;
+  font-size: 24px;
+}
+#h1p2{
+  margin-left: 30%;
+  text-align: right;
+  font-size: 28px;
+}
+  @keyframes move {
+    0% {
+      text-shadow:
+        4px -4px 0 mediumorchid, 
+        3px -3px 0 mediumorchid, 
+        2px -2px 0 mediumorchid, 
+        1px -1px 0 mediumorchid,
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    25% {    
+      text-shadow:      
+        -4px -4px 0 hsla(180, 100%, 50%, 1), 
+        -3px -3px 0 hsla(180, 100%, 50%, 1), 
+        -2px -2px 0 hsla(180, 100%, 50%, 1), 
+        -1px -1px 0 hsla(180, 100%, 50%, 1),
+        4px 4px 0 mediumorchid, 
+        3px 3px 0 mediumorchid, 
+        2px 2px 0 mediumorchid, 
+        1px 1px 0 mediumorchid      
+      ;
+    }
+    50% {
+      text-shadow:
+        -4px 4px 0 mediumorchid, 
+        -3px 3px 0 mediumorchid, 
+        -2px 2px 0 mediumorchid, 
+        -1px 1px 0 mediumorchid,
+        4px -4px 0 hsla(180, 100%, 50%, 1), 
+        3px -3px 0 hsla(180, 100%, 50%, 1), 
+        2px -2px 0 hsla(180, 100%, 50%, 1), 
+        1px -1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    75% {
+      text-shadow:
+        4px 4px 0 hsla(180, 100%, 50%, 1), 
+        3px 3px 0 hsla(180, 100%, 50%, 1), 
+        2px 2px 0 hsla(180, 100%, 50%, 1), 
+        1px 1px 0 hsla(180, 100%, 50%, 1),
+        -4px -4px 0 mediumorchid, 
+        -3px -3px 0 mediumorchid, 
+        -2px -2px 0 mediumorchid, 
+        -1px -1px 0 mediumorchid      
+      ;
+    }
+    100% {
+      text-shadow:
+        4px -4px 0 mediumorchid, 
+        3px -3px 0 mediumorchid, 
+        2px -2px 0 mediumorchid, 
+        1px -1px 0 mediumorchid,
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }  
+  }
+  .h1 p{
+      margin-top: 40px;
+      text-align: center;
+      color: mediumorchid;
+      animation: h1p linear 28s infinite;  
+  }
+  @keyframes h1p{
+      50%{
+          color: rgb(255, 0, 191);
+      }
+  } 
+.h1 .containerh31{
+    text-align: right;
+}
+.vvod {
+    color: rgb(255, 0, 191);
+    text-align: right;
+    margin-top: 40px;
+}
+.vvod h3{
+  background: linear-gradient(149deg, rgba(187, 24, 187, 0.103) 0%, rgba(106, 57, 175, 0.212) 42%, rgba(187, 24, 149, 0.233) 72%, rgba(115, 53, 134, 0.233) 100%);
+    font-size: 36px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid mediumorchid;
+    border-bottom: 1px solid mediumorchid;
+    animation: vvh3 10s infinite linear; 
+}
+.vvod h3:hover{
+    font-size: 36px;
+    color: rgb(247, 0, 255);
+    text-shadow: 2px 22px 20px rgb(247, 0, 255);
+}
+@keyframes vvh3 {
+  0% {
+      background-position: 80% 0%;
+  }
+  50% {
+      background-position: 20% 100%;
+  }
+  100% {
+      background-position: 80% 0%;
+  }
+}
+
+.vvod h3:hover::first-letter{
+    color: rgb(255, 5, 201);
+    text-shadow: 2px 22px 20px rgb(255, 0, 157);
+}
+.vvod .vvodp{
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(255, 0, 191);
+    text-align: left;
+    margin: 30px;
+}
+.info1{
+    margin-top: 60px;
+    display: flex;
+}
+.info1 .infotext {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(255, 0, 191);
+    text-align: left;
+    letter-spacing: 1px;
+    margin: 30px;
+}
+
+.info1 .infotext p:nth-child(odd)::first-letter{
+    color: rgba(0, 162, 255, 0.966);
+}
+p {
+  text-indent: 20px; 
+  letter-spacing: 1px;
+ }
+.info2{
+  font-size: 14px;
+}
+.info2 p{
+  text-align: left;
+  margin-left: 22%;
+}
+.info2 p::first-letter{
+  margin-left: -20px;
+}
+#container{
+  margin-right: 30px;
+  margin-left: 30px;
+}
+iframe {
+  opacity: 0.6;
+}
+iframe:hover{
+  opacity: 1;
+}
+.info4{
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+.info4p p{
+  margin-right: 30px;
+
+}
+.musicdiv p:nth-child(odd)::first-letter{
+  color: rgba(0, 162, 255, 0.966);
+}
+.musicdiv p:nth-child(even)::first-letter{
+  color: rgba(0, 162, 255, 0.966);
+}
+.musicdiv1{
+  display: flex;
+  color: rgb(255, 0, 191);
+  font-size: 20px;
+  margin: 30px;
+  align-items: center;
+}
+.musicdiv2{
+  display: flex;
+  color: rgb(255, 0, 191);
+  font-size: 20px;
+  margin: 30px;
+  align-items: center;
+}
+.musicdiv2 p{
+  margin-left: 20px;
+}
+.info5{
+  font-size: 18px;
+  margin: 30px;
+  color: rgb(255, 0, 191);
+}
+#info5{
+  margin-left: 20%;
+  font-size: 16px;
+  font-style: italic;
+  margin-right: 20%;
+  animation: pulse 10s infinite linear; 
+}
+#info5::before{
+  content: '«';
+}
+#info5::after{
+  content: '»';
+}
+@keyframes pulse {
+  50%{
+    color: mediumorchid;
+  }
+  
+}
+.videogame h3{
+  background: linear-gradient(149deg, rgba(186, 85, 212, 0.3) 0%, rgba(255, 134, 54, 0.1) 42%, rgba(24, 187, 173, 0.333) 72%, rgba(186, 85, 212, 0.3) 100%);
+  font-size: 36px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid mediumorchid;
+  border-bottom: 1px solid mediumorchid;
+  animation: vh3 10s infinite linear; 
+  color: rgb(255, 0, 191);
+  font-family: 'Open Sans', sans-serif;
+}
+@keyframes vh3 {
+  0% {
+      background-position: 80% 0%;
+  }
+  50% {
+      background-position: 20% 100%;
+  }
+  100% {
+      background-position: 80% 0%;
+  }
+}
+.videogame h3:hover{
+    font-size: 36px;
+    color: rgb(247, 0, 255);
+    text-shadow: 2px 22px 20px rgb(247, 0, 255);
+}
+.videogame h3:hover::first-letter{
+  color: rgb(97, 189, 158);
+  text-shadow: 2px 22px 20px rgb(124, 255, 211);
+}
+.ep1{
+  margin-left: 50%; 
+  text-align: left;
+}
+.ep1 p::first-letter{
+  margin-left: -20px;
+}
+
+.info6{
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: rgb(19, 179, 190);
+  box-shadow: 0px 10px 100px 100px rgba(19, 179, 190, 0.151), inset 0px 10px 100px 100px rgba(19, 179, 190, 0.151);
+}
+.info6 p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.info7,.info8{
+  font-size: 18px;
+  margin: 30px;
+  color: rgb(19, 179, 190);
+  box-shadow: 0px 10px 30px 50px rgba(19, 179, 190, 0.100), inset 0px 10px 30px 1000px rgba(19, 179, 190, 0.100);
+  display: flex;
+}
+.lrr p::first-letter{
+  color: rgb(247, 0, 255);
+  font-weight: 700;
+}
+.musicdiv h3{
+  background: linear-gradient(149deg, rgba(186, 85, 212, 0.3) 0%, rgba(255, 208, 54, 0.133) 42%, rgba(255, 0, 0, 0.133) 72%, rgba(186, 85, 212, 0.3) 100%);
+  font-size: 36px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid mediumorchid;
+  border-bottom: 1px solid mediumorchid;
+  animation: vch3 10s infinite linear; 
+  color: rgb(255, 0, 191);
+  font-family: 'Open Sans', sans-serif;
+}
+@keyframes vch3 {
+  0% {
+      background-position: 80% 0%;
+  }
+  50% {
+      background-position: 20% 100%;
+  }
+  100% {
+      background-position: 80% 0%;
+  }
+}
+.musicdiv h3:hover{
+    font-size: 36px;
+    color: rgb(247, 0, 255);
+    text-shadow: 2px 22px 20px rgb(247, 0, 255);
+}
+.musicdiv h3:hover::first-letter{
+  color: rgb(255, 187, 110);
+  text-shadow: 2px 22px 20px rgb(235, 255, 124);
+}
+.filmiflex{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.cover1{
+  background: url(img/cover1.jpg) no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 650px;
+  box-shadow: inset 0px 10px 30px 1000px rgba(1, 32, 34, 0.9),0px 10px 30px 10px rgba(19, 179, 190, 0.900);
+
+}
+.hc1{
+  opacity: 0.3;
+  
+}
+.pc1{
+  height: 100%;
+  width: 100%;
+}
+.cover1 .hc1,.pc1{
+  font-weight: 600;
+  font-size: 18px;
+  color: mediumvioletred;
+  text-align: center;
+  opacity: 1;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+.cover1 .imgc1,.pc1:hover{
+  text-align: center;
+  opacity: 0;
+}
+.cover1:hover{
+  box-shadow: 0px 10px 30px 10px rgba(19, 179, 190, 0.900);
+}
+
+.cover2{
+  background: url(img/cover2.jpg) no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 650px;
+  box-shadow: inset 0px 10px 30px 1000px rgba(34, 1, 1, 0.9),0px 10px 30px 10px rgba(156, 16, 16, 0.9);
+
+}
+.hc2{
+  opacity: 0.3;
+  
+}
+.pc2{
+  height: 100%;
+  width: 100%;
+}
+.cover2 .hc2,.pc2{
+  font-weight: 600;
+  font-size: 18px;
+  color: mediumvioletred;
+  text-align: center;
+  opacity: 1;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+.cover2 .imgc2,.pc2:hover{
+  text-align: center;
+  opacity: 0;
+}
+.cover2:hover{
+  box-shadow: 0px 10px 30px 10px rgba(19, 179, 190, 0.900);
+}
+
+.cover3{
+  background: url(img/cover3.jpg) no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 650px;
+  box-shadow: inset 0px 10px 30px 1000px rgba(34, 1, 27, 0.9),0px 10px 30px 10px rgba(156, 16, 137, 0.9);
+
+}
+.hc3{
+  opacity: 0.3;
+  
+}
+.pc3{
+  height: 100%;
+  width: 100%;
+}
+.cover3 .hc3,.pc3{
+  font-weight: 600;
+  font-size: 18px;
+  color: mediumvioletred;
+  text-align: center;
+  opacity: 1;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+.cover3 .imgc3,.pc3:hover{
+  text-align: center;
+  opacity: 0;
+}
+.cover3:hover{
+  box-shadow: 0px 10px 30px 10px rgba(19, 179, 190, 0.900);
+}
+
+footer{
+  min-width: 100%;
+  min-height: 1rem;
+  height: 7rem;
+  box-shadow: 0px 1px 20px 7px rgb(102,51,153,0.5);
+  border-bottom: 1px solid rgb(102,51,153,0.5);
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 7em;
+  font-size: 18px;
+  color: mediumvioletred;
+}
+#ov{
+  max-width: 100%;
+  width: 100%;
+  height: 700px;
+  max-height: 70%;
+}
+@media (max-width: 992px) {
+  .info1{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .infoimg {
+    max-width: 100%;
+    margin: 0 auto;
+
+  }
+  
+  
+}
+@media (max-width: 1080px) {
+  .info1,.info4,.musicdiv1,.musicdiv2,.info7,.info8,.filmiflex{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #img1 {
+    max-height: 500px;
+    margin: 0 auto;
+
+  }
+  .filmiflex{
+    justify-content: center;
+  }
+
+ 
+  
+}
+@media (max-width: 720px) {
+   .info1,.info4,.musicdiv1,.musicdiv2,.info7,.info8,.filmiflex{
+    display: flex;
+    align-items: column;
+  }
+  #img1 {
+    max-height: 500px;
+    margin: 0 auto;
+
+  }
+  
+  .container{
+    max-width: 660px;
+  }
+  #container{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .filmiflex{
+    align-items: center;
+  }
+  
+}
+
+@media (max-width: 1280px) {
+   .info1,.info4,.musicdiv1,.musicdiv2,.info7,.info8,.filmiflex{
+    display: flex;
+    align-items: column;
+  }
+  #img1 {
+    max-height: 500px;
+    margin: 0 auto;
+
+  }
+  
+  .container{
+    max-width: 660px;
+  }
+  #container{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .filmiflex{
+    align-items: center;
+  }
+  
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+footer p{
+  color: aliceblue;
+  margin-left: 10%;
+}
+.gametemak{
+  border: 2px solid mediumvioletred;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.gametemak:hover{
+  border: 2px solid gold;
+}

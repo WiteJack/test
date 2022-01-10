@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/phaser.min.js"></script>
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(0, 39, 44);">
+    <div id="win" style="font-size: 30px; color: gold; font-weight: 700; text-align: center;margin: 50px;">___</div>
+    <div id="game" style="display: flex; justify-content: center; align-items: center; border: 3px solid aqua; width: 800px; height: 600px; margin: 0 auto; box-shadow: 10px 10px 10px aqua;"><script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
+        <script>
+            var sound = new Howl({
+              src: ['assets/Retrogram.mp3'],
+              volume: 0.05,
+            });
+            sound.play()
+        </script></div>
+        <p style="font-size: 24px; font-weight: 700; text-align: center; color: gold; font-style: italic; text-shadow: 2px 2px 2px rgb(153, 130, 0);">*Для рестарта, необходимо кликнуть на экран!</p>
+        <p style="font-style: italic; text-align: center; color: gold; font-size: 20px;">Внимание Moz-FireFox, по умолчанию блокирует звук! Для погружения была подобранна музыка (Magic Sword - Retrogram)</p>
+    
+    <script src="js/game.js" type="module"></script>
+
+</body>
+</html>
