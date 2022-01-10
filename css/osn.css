@@ -1,3 +1,6 @@
+body p{
+font-size: 1.2em;
+}
 .img1:hover{
     animation: key1 1.5s ease-in-out;
 }
@@ -13,6 +16,10 @@
     50%{
         transform: scale(1.05, 0.95);
     }
+}
+.img3{
+display:flex;
+  margin: 6% auto;
 }
 .img3:hover{
     animation: key3 1.5s ease-in-out;
@@ -122,9 +129,76 @@
           
     }
 }
-#oneone div{
+.oneone div{
     border: 3px solid rgb(165, 165, 165); border-radius: 50%; height: 30px; width: 30px; margin-left: 40%; margin-top: 10%;
 }
-#oneoneone{
-    border: 3px solid rgb(165, 165, 165); border-radius: 50%; height: 30px; width: 30px; margin-left: 40%; margin-top: 1%;
-}
+@media (max-width: 1092px) {
+ .oneone div{
+   display:none;
+
+  }
+  @media (max-width: 1192px) {
+ .oneone div{
+   display:none;
+
+  }
+    @media (max-width: 1292px) {
+ .oneone div{
+   display:none;
+
+  }
+      @media (max-width: 1392px) {
+ .oneone div{
+   display:none;
+
+  }
+        @media (max-width: 1492px) {
+ .oneone div{
+   display:none;
+
+  }
+          @media (max-width: 1592px) {
+ .oneone div{
+   display:none;
+
+  }
+@media (max-width: 992px) {
+ .oneone div{
+   display:none;
+
+  }
+ @media (max-width: 892px) {
+ .oneone div{
+   display:none;
+
+  }
+ @media (max-width: 792px) {
+ .oneone div{
+   display:none;
+
+  }
+   @media (max-width: 692px) {
+ .oneone div{
+   display:none;
+
+  }
+     @media (max-width: 592px) {
+ .oneone div{
+   display:none;
+
+  }
+       @media (max-width: 492px) {
+ .oneone div{
+   display:none;
+
+  }
+         @media (max-width: 392px) {
+ .oneone div{
+   display:none;
+
+  }
+           @media (max-width: 292px) {
+ .oneone div{
+   display:none;
+
+  }
